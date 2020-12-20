@@ -26,7 +26,7 @@ url = "https://www.buonomobilita.it/mobilita2020/#/doveUsareBuoni"
 # dict = {'city' : {pages to scrap}}
 dict = {}
 
-file = open("cities.txt",'r')
+file = open("inputCities.txt",'r')
 lines = file.readlines()
 count = 0
 for line in lines: 
