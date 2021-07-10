@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+   scrap:
+      build: .
+      container_name: scraper
+      command: sh -c "npm install -g nodemon && nodemon --exec streamlit run scrap.py"
+      working_dir: /script
+      volumes:
+         - .:/script
+      ports:
+        - 8501:8501
+  
